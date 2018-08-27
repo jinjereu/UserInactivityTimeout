@@ -12,6 +12,9 @@
 		1C90D6AC213363D6003A41C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C90D6AA213363D6003A41C9 /* Main.storyboard */; };
 		1C90D6AE213363D8003A41C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C90D6AD213363D8003A41C9 /* Assets.xcassets */; };
 		1C90D6B1213363D8003A41C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C90D6AF213363D8003A41C9 /* LaunchScreen.storyboard */; };
+		1C90D6B92133659F003A41C9 /* FrameworkApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C90D6B82133659F003A41C9 /* FrameworkApplication.swift */; };
+		1C90D6BB2133674B003A41C9 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C90D6BA2133674B003A41C9 /* Notifications.swift */; };
+		1C90D6BD213367C6003A41C9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C90D6BC213367C6003A41C9 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		1C90D6AD213363D8003A41C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C90D6B0213363D8003A41C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C90D6B2213363D8003A41C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C90D6B82133659F003A41C9 /* FrameworkApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkApplication.swift; sourceTree = "<group>"; };
+		1C90D6BA2133674B003A41C9 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		1C90D6BC213367C6003A41C9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		1C90D6A5213363D6003A41C9 /* UserInactivityTimeout */ = {
 			isa = PBXGroup;
 			children = (
+				1C90D6BC213367C6003A41C9 /* main.swift */,
 				1C90D6A6213363D6003A41C9 /* AppDelegate.swift */,
 				1C90D6A8213363D6003A41C9 /* ViewController.swift */,
 				1C90D6AA213363D6003A41C9 /* Main.storyboard */,
 				1C90D6AD213363D8003A41C9 /* Assets.xcassets */,
 				1C90D6AF213363D8003A41C9 /* LaunchScreen.storyboard */,
 				1C90D6B2213363D8003A41C9 /* Info.plist */,
+				1C90D6B82133659F003A41C9 /* FrameworkApplication.swift */,
+				1C90D6BA2133674B003A41C9 /* Notifications.swift */,
 			);
 			path = UserInactivityTimeout;
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C90D6BB2133674B003A41C9 /* Notifications.swift in Sources */,
+				1C90D6BD213367C6003A41C9 /* main.swift in Sources */,
 				1C90D6A9213363D6003A41C9 /* ViewController.swift in Sources */,
+				1C90D6B92133659F003A41C9 /* FrameworkApplication.swift in Sources */,
 				1C90D6A7213363D6003A41C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

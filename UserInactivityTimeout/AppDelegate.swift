@@ -8,14 +8,21 @@
 
 import UIKit
 
-@UIApplicationMain
+//TODO: Other things to consider - stop/start the timer or register/unregister the notification in applicationDidBecomeActive and applicationWillResignActive
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		
+		
+		//Register the notification for Application Timeout
+		NotificationCenter.default.addObserver(self, selector: #selector(AppDelegate.applicationDidTimeout(notification:)),
+											   name: .appTimeout,
+											   object: nil)
+		
 		return true
 	}
 
@@ -41,6 +48,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 	}
 
+}
 
+
+
+// MARK: - FrameworkApplication -
+
+
+extension AppDelegate {
+	
+	@objc fileprivate func applicationDidTimeout(notification: NSNotification) {
+		print("Application Did Timeout!")
+		
+		//TODO: Handling - show a message, disconnect the user or perform any actions as required
+	}
+	
 }
 
